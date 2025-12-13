@@ -107,7 +107,7 @@ module.exports = {
     (layers "${side}.Cu")
     ${p.name ? '(name "' + p.name + '")' : ''}
     (hatch edge 0.5)
-    ${p.prority > 0 ? '(priority ' + p.priority + ')' : ''}
+    ${p.priority > 0 ? '(priority ' + p.priority + ')' : ''}
     (connect_pads ${p.connect_pads}
       (clearance ${p.pad_clearance})
     )
